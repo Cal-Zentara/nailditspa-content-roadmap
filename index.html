@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nail'd It! Spa — Summer Content Plan 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blush: #F9EDE8;
+      --blush-soft: #fdf6f2;
+      --terra: #C4714F;
+      --terra-light: #f7e6dd;
+      --terra-dark: #A05038;
+      --gold: #C9A24A;
+      --gold-light: #f6edd6;
+      --plum: #8E5A6B;
+      --plum-light: #f3e7eb;
+      --sage: #7C8A6B;
+      --sage-light: #eef1e9;
+      --rose: #CE8E8E;
+      --rose-light: #f9ecec;
+      --ink: #1A0F0A;
+      --mid: #6B4A3A;
+      --bg: #fbf6f3;
+      --white: #ffffff;
+      --border: #ecdfd8;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, .hero-title, .phase-name, .intel-h2, .strategy-title {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* TOP BAR */
+    .topbar {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .topbar-logo { height: 46px; width: auto; border-radius: 8px; }
+
+    /* HERO */
+    .hero {
+      background: var(--ink);
+      padding: 48px 24px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 80% 20%, rgba(196,113,79,0.35) 0%, transparent 60%),
+                  radial-gradient(ellipse at 20% 80%, rgba(201,162,74,0.18) 0%, transparent 55%);
+    }
+
+    .hero-content { position: relative; z-index: 1; }
+
+    .hero-kicker {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .hero-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--white);
+      margin-top: 8px;
+      letter-spacing: -0.3px;
+    }
+
+    .hero-pills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .hero-pill {
+      background: rgba(255,255,255,0.12);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 100px;
+      border: 1px solid rgba(255,255,255,0.22);
+    }
+
+    .platform-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+
+    .platform-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(196,113,79,0.25);
+      border: 1px solid rgba(196,113,79,0.45);
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 100px;
+    }
+
+    /* PHOTO STRIP */
+    .photo-strip { display: flex; gap: 0; height: 220px; overflow: hidden; }
+    .photo-item { flex: 1; overflow: hidden; position: relative; }
+    .photo-item img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 0.4s ease; }
+    .photo-item:hover img { transform: scale(1.05); }
+    @media (max-width: 600px) { .photo-strip { height: 140px; } }
+
+    /* LEGEND */
+    .legend {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .legend-item { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 600; color: var(--mid); }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+    /* MAIN */
+    .main { max-width: 780px; margin: 0 auto; padding: 36px 20px 60px; }
+
+    /* INTRO CARD */
+    .intro-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px 28px;
+      margin-bottom: 40px;
+      border-left: 4px solid var(--terra);
+    }
+    .intro-card p { font-size: 15px; color: var(--mid); line-height: 1.75; }
+    .intro-card strong { color: var(--ink); }
+
+    /* STRATEGY ROW */
+    .strategy-row { display: flex; align-items: stretch; gap: 0; margin-bottom: 40px; }
+    .strategy-card { flex: 1; background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 20px; display: flex; gap: 14px; align-items: flex-start; }
+    .strategy-num { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800; color: var(--white); flex-shrink: 0; font-family: 'Inter', sans-serif; }
+    .s1 .strategy-num { background: var(--terra); }
+    .s2 .strategy-num { background: var(--gold); }
+    .s3 .strategy-num { background: var(--terra-dark); }
+    .strategy-title { font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+    .strategy-desc { font-size: 13px; color: var(--mid); line-height: 1.6; }
+    .strategy-arrow { display: flex; align-items: center; padding: 0 10px; font-size: 20px; color: var(--border); flex-shrink: 0; }
+    @media (max-width: 640px) {
+      .strategy-row { flex-direction: column; }
+      .strategy-arrow { transform: rotate(90deg); align-self: center; padding: 4px 0; }
+    }
+
+    /* INTEL */
+    .intel-banner { margin-bottom: 22px; }
+    .intel-tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--terra-dark); background: var(--terra-light); padding: 5px 12px; border-radius: 100px; margin-bottom: 12px; }
+    .intel-h2 { font-size: 23px; font-weight: 700; color: var(--ink); letter-spacing: -0.3px; }
+    .intel-sub { font-size: 14px; color: var(--mid); line-height: 1.7; margin-top: 8px; }
+
+    .compare-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 22px; }
+    @media (max-width: 600px) { .compare-row { grid-template-columns: 1fr; } }
+    .compare-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 20px 22px; }
+    .compare-card.us { border-left: 4px solid var(--terra); }
+    .compare-card.them { border-left: 4px solid var(--border); }
+    .compare-head { font-size: 13px; font-weight: 800; letter-spacing: 0.3px; margin-bottom: 12px; }
+    .them-head { color: var(--mid); }
+    .us-head { color: var(--terra-dark); }
+    .compare-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .compare-list li { font-size: 13px; color: var(--mid); line-height: 1.55; padding-left: 20px; position: relative; }
+    .compare-card.them .compare-list li::before { content: '✕'; position: absolute; left: 0; color: #cbb6ac; font-weight: 700; }
+    .compare-card.us .compare-list li::before { content: '✓'; position: absolute; left: 0; color: var(--terra); font-weight: 700; }
+
+    .lines-card { background: var(--ink); border-radius: 18px; padding: 24px 26px; margin-bottom: 44px; }
+    .lines-title { font-size: 13px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+    .lines-list { list-style: none; counter-reset: line; display: flex; flex-direction: column; gap: 13px; }
+    .lines-list li { counter-increment: line; font-size: 15px; font-weight: 500; color: #fff; line-height: 1.5; padding-left: 32px; position: relative; }
+    .lines-list li::before { content: counter(line); position: absolute; left: 0; top: 1px; width: 21px; height: 21px; background: var(--terra); color: #fff; border-radius: 6px; font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+
+    /* HOOK ENGINE + GROW */
+    .grow-section { margin-bottom: 44px; }
+    .grow-rank { display: flex; flex-direction: column; gap: 14px; margin-bottom: 18px; }
+    .grow-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 20px 22px; display: flex; gap: 16px; align-items: flex-start; }
+    .grow-card.first { border-left: 4px solid var(--terra); }
+    .grow-badge { width: 34px; height: 34px; border-radius: 10px; background: var(--terra-light); color: var(--terra-dark); display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 800; flex-shrink: 0; }
+    .grow-card.first .grow-badge { background: var(--terra); color: #fff; }
+    .grow-body { flex: 1; }
+    .grow-h { font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 5px; }
+    .grow-p { font-size: 13px; color: var(--mid); line-height: 1.6; }
+    .grow-src { display: inline-block; margin-top: 9px; font-size: 11px; font-weight: 600; color: var(--terra-dark); background: var(--terra-light); padding: 3px 10px; border-radius: 100px; }
+    .grow-note { background: var(--sage-light); border-radius: 14px; padding: 16px 20px; font-size: 13px; color: #4f5e3e; line-height: 1.6; }
+    .grow-note strong { color: #3a4a2c; }
+
+    /* PHASE */
+    .phase-section { margin-bottom: 44px; }
+    .phase-banner { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+    .phase-number { width: 44px; height: 44px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 800; color: var(--white); flex-shrink: 0; }
+    .p1 .phase-number { background: var(--terra); }
+    .p2 .phase-number { background: var(--gold); }
+    .p3 .phase-number { background: var(--terra-dark); }
+    .phase-info { flex: 1; }
+    .phase-name { font-size: 22px; font-weight: 700; color: var(--ink); letter-spacing: -0.2px; }
+    .phase-desc { font-size: 13px; color: var(--mid); margin-top: 2px; }
+    .phase-badge { font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 100px; letter-spacing: 0.3px; }
+    .p1 .phase-badge { background: var(--terra-light); color: var(--terra-dark); }
+    .p2 .phase-badge { background: var(--gold-light); color: #9a7615; }
+    .p3 .phase-badge { background: var(--terra-light); color: var(--terra-dark); }
+
+    /* WEEK CARDS */
+    .weeks { display: flex; flex-direction: column; gap: 12px; }
+    .week-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: box-shadow 0.2s; }
+    .week-card:hover { box-shadow: 0 4px 20px rgba(26,15,10,0.08); }
+    .week-header { padding: 12px 18px; background: var(--blush); border-bottom: 1px solid var(--border); font-size: 12px; font-weight: 700; color: var(--terra-dark); letter-spacing: 0.5px; text-transform: uppercase; }
+    .week-theme { font-weight: 500; color: var(--mid); text-transform: none; letter-spacing: 0; }
+    .week-posts { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; padding: 14px; }
+    @media (max-width: 560px) { .week-posts { grid-template-columns: 1fr; } }
+    .post-cell { padding: 12px 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--blush-soft); }
+    .post-type { display: inline-flex; align-items: center; gap: 5px; font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 6px; }
+    .type-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+
+    .reveal .type-dot { background: var(--terra); } .reveal .post-type { color: var(--terra-dark); }
+    .helpful .type-dot { background: var(--gold); } .helpful .post-type { color: #9a7615; }
+    .trust .type-dot { background: var(--plum); } .trust .post-type { color: var(--plum); }
+    .service .type-dot { background: var(--sage); } .service .post-type { color: #5f6e4d; }
+    .community .type-dot { background: var(--rose); } .community .post-type { color: #b06a6a; }
+    .booking .type-dot { background: var(--terra-dark); } .booking .post-type { color: var(--terra-dark); }
+
+    .post-text { font-size: 13px; color: var(--ink); line-height: 1.5; }
+    .post-format { display: inline-block; margin-top: 7px; font-size: 10px; font-weight: 600; color: var(--mid); background: var(--white); border: 1px solid var(--border); padding: 2px 8px; border-radius: 100px; }
+
+    /* STATUS */
+    .status-section { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 40px; }
+    @media (max-width: 540px) { .status-section { grid-template-columns: 1fr; } }
+    .status-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 22px; }
+    .status-title { font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .status-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+    .icon-green { background: var(--sage-light); }
+    .icon-orange { background: var(--gold-light); }
+    .check-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .check-item { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--mid); line-height: 1.5; }
+    .check-box { width: 18px; height: 18px; border-radius: 5px; flex-shrink: 0; margin-top: 1px; display: flex; align-items: center; justify-content: center; }
+    .check-box.done { background: var(--sage-light); }
+    .check-box.todo { background: var(--gold-light); border: 1.5px solid #e0c469; }
+
+    /* FOOTER */
+    .footer { text-align: center; padding: 28px 24px; font-size: 12px; color: var(--mid); background: var(--white); border-top: 1px solid var(--border); }
+    .footer a { color: var(--terra); text-decoration: none; font-weight: 600; }
+    .svg-check { width: 10px; height: 10px; }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <img src="logo.jpeg" alt="Nail'd It! Spa" class="topbar-logo" />
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-kicker">Nail'd It! Spa · Stanton, CA</div>
+      <div class="hero-title">Summer Content Plan 2026</div>
+      <div class="hero-pills">
+        <span class="hero-pill">10 Weeks</span>
+        <span class="hero-pill">5 Posts Per Week</span>
+        <span class="hero-pill">5 Rotating Hooks</span>
+        <span class="hero-pill">Bookings + Walk Ins</span>
+        <span class="hero-pill">June to August</span>
+        <span class="hero-pill">Organic First</span>
+      </div>
+      <div class="platform-row">
+        <span class="platform-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="white" stroke-width="2" fill="none"/><circle cx="12" cy="12" r="4" stroke="white" stroke-width="2" fill="none"/><circle cx="17.5" cy="6.5" r="1.2" fill="white"/></svg>
+          Instagram Reels + Feed
+        </span>
+        <span class="platform-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0022 12z"/></svg>
+          Facebook (same content)
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHOTO STRIP -->
+  <div class="photo-strip">
+    <div class="photo-item"><img src="img-1.jpeg" alt="nail set" /></div>
+    <div class="photo-item"><img src="img-2.jpeg" alt="nail set" /></div>
+    <div class="photo-item"><img src="img-3.jpeg" alt="nail set" /></div>
+    <div class="photo-item"><img src="img-4.jpeg" alt="nail set" /></div>
+    <div class="photo-item"><img src="img-5.png" alt="nail set" /></div>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="legend">
+    <div class="legend-item"><span class="legend-dot" style="background:var(--terra)"></span> Reveal</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--gold)"></span> Helpful</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--plum)"></span> Trust</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--sage)"></span> Service</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--rose)"></span> Community</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--terra-dark)"></span> Booking</div>
+  </div>
+
+  <div class="main">
+
+    <!-- INTRO -->
+    <div class="intro-card">
+      <p>Spend the summer <strong>earning attention with the work and the people behind it.</strong> Every other nail salon posts a finished set on a white background and hopes for likes. We do the opposite: real hands, real reactions, the real team, and a Vietnamese owned craft nobody else around here is claiming. Running <strong>5 posts a week</strong>, with the weekly Reveal <strong>rotating through 5 hook styles</strong> so the feed never feels the same twice. Each post is pegged to what people actually want this season, from jelly nails in June to back to school sets in August. The goal is simple: <strong>turn the scroll into a booking</strong> at nailditspa.com or a walk in.</p>
+    </div>
+
+    <!-- STRATEGY -->
+    <div class="strategy-row">
+      <div class="strategy-card s1">
+        <div class="strategy-num">1</div>
+        <div class="strategy-info">
+          <div class="strategy-title">Get Discovered</div>
+          <div class="strategy-desc">June. Post transformations and helpful content, tag the location, use local hashtags. People nearby find the page, save posts, and follow.</div>
+        </div>
+      </div>
+      <div class="strategy-arrow">→</div>
+      <div class="strategy-card s2">
+        <div class="strategy-num">2</div>
+        <div class="strategy-info">
+          <div class="strategy-title">Build Trust</div>
+          <div class="strategy-desc">July. Reviews, the team, real clients, the Vietnamese owned craft. By the time someone is ready to book, they already feel like they know us.</div>
+        </div>
+      </div>
+      <div class="strategy-arrow">→</div>
+      <div class="strategy-card s3">
+        <div class="strategy-num">3</div>
+        <div class="strategy-info">
+          <div class="strategy-title">Book the Summer</div>
+          <div class="strategy-desc">August. Seasonal urgency: back to school, graduation, last summer sets. Clear booking CTA on every post, plus a small boost behind the winner.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPETITOR INTEL -->
+    <div class="intel-banner">
+      <div class="intel-tag">Competitor Research, June 2026</div>
+      <div class="intel-h2">What every nail salon does, and where Nail'd It wins</div>
+      <p class="intel-sub">Locally, T's Nails owns "best nail salon" in search and The Nail Boss leads on Yelp reviews. But here is the gap from our own findability audit: nobody has claimed the Vietnamese nail salon angle online. BaoNail even shows up for that search and Nail'd It does not, despite being Vietnamese owned. That lane, plus the people behind the salon, is wide open and ours to take.</p>
+    </div>
+
+    <div class="compare-row">
+      <div class="compare-card them">
+        <div class="compare-head them-head">What they do</div>
+        <ul class="compare-list">
+          <li>Post finished nail art in isolation, macro close ups on a plain background (Refinery29, Allure)</li>
+          <li>Treat Instagram like a portfolio, not a booking tool. No clear call to book</li>
+          <li>The salon stays faceless. You never meet the actual tech or the team</li>
+          <li>No story. Just the product, hoping likes turn into walk ins on their own</li>
+        </ul>
+      </div>
+      <div class="compare-card us">
+        <div class="compare-head us-head">What Nail'd It does</div>
+        <ul class="compare-list">
+          <li>Show the experience, not just the result: hands working, the gloss coat, the reveal</li>
+          <li>End every post with a real reason to book. Link in bio, walk in anytime</li>
+          <li>Put the team on camera. Dalena, Twee, Nancy, and Mindy. Clients come back for people</li>
+          <li>Own the Vietnamese owned craft, the search lane no local salon has claimed online</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lines-card">
+      <div class="lines-title">Our 5 core lines — reuse across the summer</div>
+      <ol class="lines-list">
+        <li>Vietnamese owned, and the standard we hold every set to shows it.</li>
+        <li>Clients have trusted the same hands here for years. That is not an accident.</li>
+        <li>Honest pricing, no surprises. Book online, or just walk in. We are open 7 days.</li>
+        <li>It is not just the owner who cares. Twee, Nancy, and Mindy treat your nails like their own.</li>
+        <li>A set that still looks good in week three is the whole point. Anyone can do day one.</li>
+      </ol>
+    </div>
+
+    <!-- HOOK ENGINE -->
+    <div class="grow-section">
+      <div class="intel-banner">
+        <div class="intel-tag">The Hook Engine</div>
+        <div class="intel-h2">5 rotating hooks, so the feed never goes stale</div>
+        <p class="intel-sub">One repeated hook burns out fast. So we rotate five. The first job of every post is the same: earn the watch in the first 3 seconds. People save and share for two reasons only, it is satisfying to watch or useful to send a friend. Every hook below is built to be one of those. 92% of people watch with the sound off, so the hook always lives in the text on screen too (Torro, 2026).</p>
+      </div>
+
+      <div class="grow-rank">
+        <div class="grow-card first">
+          <div class="grow-badge">★</div>
+          <div class="grow-body">
+            <div class="grow-h">1. The Transformation (lead with this)</div>
+            <div class="grow-p">Bare or grown out nails at the start, the finished set at the end, in one clip. The brain wants to see the payoff, so people stay to the end. Before and after reveals are the single strongest format for nail content (CreatorFlow, 2026). Text on screen: "from this to this in one visit."</div>
+            <span class="grow-src">Satisfying to watch · proves the work</span>
+          </div>
+        </div>
+
+        <div class="grow-card">
+          <div class="grow-badge">2</div>
+          <div class="grow-body">
+            <div class="grow-h">The Satisfying Close Up</div>
+            <div class="grow-p">Macro, slow, no talking. The brush laying down color, the shaping, the final gloss coat. This is the ASMR lane that keeps people watching and rewatching. Pair it with a soft track. Watch time is what the algorithm rewards most (Hootsuite, 2026).</div>
+            <span class="grow-src">Satisfying to watch · drives rewatches</span>
+          </div>
+        </div>
+
+        <div class="grow-card">
+          <div class="grow-badge">3</div>
+          <div class="grow-body">
+            <div class="grow-h">The Reaction</div>
+            <div class="grow-p">The moment a client sees her nails for the first time. Real surprise and delight stops the scroll faster than any posed shot, and it gets saves because it feels human (Nail Experts University). Hard for a faceless competitor to fake.</div>
+            <span class="grow-src">Human · gets saves</span>
+          </div>
+        </div>
+
+        <div class="grow-card">
+          <div class="grow-badge">4</div>
+          <div class="grow-body">
+            <div class="grow-h">The Curiosity</div>
+            <div class="grow-p">Name a problem she did not know she had. "The one habit quietly wrecking your gel manicure." She has to keep watching to find out. This is the useful to send lane, one friend shares it with another. Curiosity gap hooks travel across every niche (CreatorFlow).</div>
+            <span class="grow-src">Useful to send · gets shares</span>
+          </div>
+        </div>
+
+        <div class="grow-card">
+          <div class="grow-badge">💬</div>
+          <div class="grow-body">
+            <div class="grow-h">5. The Question (our signature close)</div>
+            <div class="grow-p">End by asking for a quick answer. "Drop the color you would get this summer 👇 we will design a set around it." People cannot resist answering, which feeds the algorithm and quietly shows we do any look. Pair this close with any hook above.</div>
+            <span class="grow-src">Useful · drives comments and DMs</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grow-note"><strong>The filter for every post:</strong> would a woman save this to show her tech, or send it to a friend? If it is not satisfying enough to rewatch or useful enough to send, it does not go out. Rotate the five hooks down the calendar so no two weeks feel the same.</div>
+
+      <div style="margin-top:20px;background:linear-gradient(135deg,#1A0F0A 0%,#3a2419 100%);border-radius:16px;padding:22px 24px;display:flex;gap:16px;align-items:flex-start;">
+        <div style="width:38px;height:38px;border-radius:10px;background:var(--gold);color:#1A0F0A;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">✿</div>
+        <div>
+          <div style="font-size:15px;font-weight:700;color:#ffffff;margin-bottom:6px;font-family:'Playfair Display',serif;">Monthly Anchor — The People</div>
+          <div style="font-size:13px;color:#d8c4ba;line-height:1.65;">Once a month, put a face to the salon, the thing the faceless competitors never do. Spotlight one team member: how long Twee, Nancy, or Mindy has been here, what she is known for, and the clients who only book her. Shoot it over real salon footage so it feels like a place, not an ad. This is the trust engine that turns a follower into a regular, and it quietly carries the Vietnamese owned craft without ever sounding like a tagline.</div>
+          <span style="display:inline-block;margin-top:10px;font-size:11px;font-weight:600;color:var(--gold);background:rgba(201,162,74,0.15);padding:3px 10px;border-radius:100px;">Once a month · the lane nobody else has</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- GROW AUDIENCE -->
+    <div class="grow-section">
+      <div class="intel-banner">
+        <div class="intel-tag">Audience Research, June 2026</div>
+        <div class="intel-h2">How to grow the audience fastest</div>
+        <p class="intel-sub">The calendar fills the feed. This is how you get people nearby to actually see it. Ranked fastest first, pulled from 2024 to 2026 marketing data. Almost all of it is free.</p>
+      </div>
+
+      <div class="grow-rank">
+        <div class="grow-card first">
+          <div class="grow-badge">1</div>
+          <div class="grow-body">
+            <div class="grow-h">Pour into Google reviews first</div>
+            <div class="grow-p">For a local salon, Google is where the booking actually happens. Nail'd It is strong on Yelp (229 reviews) but thin on Google (29), and Google is what AI assistants and Maps pull from most (our findability audit, April 2026). Getting to 50 plus is the single biggest ranking move available. A one star jump can lift bookings by 9 to 12% (Marketing LTB, 2026). Ask every happy client at checkout with the QR code, and reply to all of them.</div>
+            <span class="grow-src">Free · fastest payoff · review automation already running</span>
+          </div>
+        </div>
+
+        <div class="grow-card">
+          <div class="grow-badge">2</div>
+          <div class="grow-body">
+            <div class="grow-h">Repost real clients and tag them</div>
+            <div class="grow-p">When a client posts her nails, repost it and tag her. It fills the feed with proof, and it puts the salon in front of all of her friends for free. It also makes the next client want to be featured (OpenTable, Hootsuite 2025). The faceless competitors never do this.</div>
+            <span class="grow-src">Free · compounds every month</span>
+          </div>
+        </div>
+
+        <div class="grow-card">
+          <div class="grow-badge">3</div>
+          <div class="grow-body">
+            <div class="grow-h">Tag the location and use local hashtags every time</div>
+            <div class="grow-p">Add the Stanton location tag and local hashtags like #StantonNails, #OrangeCountyNails, #CerritosNails to every post and reel. Consistent, precise location signals are what put a small salon into nearby Explore feeds (BulkyFans Local Density Playbook, 2025).</div>
+            <span class="grow-src">Free · local reach</span>
+          </div>
+        </div>
+
+        <div class="grow-card">
+          <div class="grow-badge">4</div>
+          <div class="grow-body">
+            <div class="grow-h">Turn comments into DMs (already live)</div>
+            <div class="grow-p">CreatorFlow is already running on the page and watches every post. End captions with "Comment BOOK and I will send you our booking link 💅" and it auto DMs the Fresha link the second someone comments, even while you are with a client. Followers barely see your posts. A booking link sitting in their DMs, they act on. Keep BOOK as the everyday keyword so it stays consistent.</div>
+            <span class="grow-src">Free · CreatorFlow is already set up · keyword BOOK</span>
+          </div>
+        </div>
+
+        <div class="grow-card">
+          <div class="grow-badge">5</div>
+          <div class="grow-body">
+            <div class="grow-h">Free sets for small local creators and Facebook groups</div>
+            <div class="grow-p">Invite a couple of small local creators (1k to 10k followers) in for a free set in exchange for a post. Micro creators have deeper local trust than big ones (MangoMint, Zoca 2026). And quietly join the Stanton and Orange County mom and neighborhood Facebook groups where people ask "best nail place near me." Show up helpful, not spammy.</div>
+            <span class="grow-src">Free or low cost · builds local word of mouth</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grow-note"><strong>Where we start:</strong> the page is already live at @naildit.spa, the website and Google profile are up, and review automation is running. That is a warm start. The job is to wake the feed up, post consistently, and make the page worth landing on. Begin with the top two: <strong>drive Google reviews (tactic 1)</strong> and <strong>repost real clients (tactic 2)</strong>.</div>
+    </div>
+
+    <!-- SHORT VERSION -->
+    <div class="grow-section">
+      <div class="intel-banner">
+        <div class="intel-tag">The Short Version</div>
+        <div class="intel-h2">How to grow fast, in 6 steps</div>
+        <p class="intel-sub">The whole plan above, boiled down. If you only remember six things, remember these.</p>
+      </div>
+      <div class="lines-card">
+        <div class="lines-title">Pin this by the front desk</div>
+        <ol class="lines-list">
+          <li>Post short video 5 times a week. Under 20 seconds, hook in the first second. A phone is fine.</li>
+          <li>Lead with the before and after. The reveal is the format that always works.</li>
+          <li>Make people save or send it. End with "save this for your next fill" or "send this to your nail friend."</li>
+          <li>Show the people. Hands, faces, the team, real clients. That is the whole advantage.</li>
+          <li>Tag the Stanton location and reply to every comment within the hour. The app rewards it.</li>
+          <li>Ask for the Google review at checkout, every time. One star up is up to 12% more bookings.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- PHASE 1 -->
+    <div class="phase-section p1">
+      <div class="phase-banner">
+        <div class="phase-number">1</div>
+        <div class="phase-info">
+          <div class="phase-name">Get Discovered</div>
+          <div class="phase-desc">June — earn attention before asking for anything</div>
+        </div>
+        <span class="phase-badge">4 Weeks</span>
+      </div>
+      <div class="weeks">
+
+        <div class="week-card">
+          <div class="week-header">Week 1 — June 8 to 14 <span class="week-theme">· Jelly nails, the vacation set of the season</span></div>
+          <div class="week-posts">
+            <div class="post-cell reveal">
+              <div class="post-type"><span class="type-dot"></span>Reveal</div>
+              <div class="post-text">TRANSFORMATION: grown out nails to a glossy jelly set in one visit. "From this to this 🍑" Jelly is the vacation nail of summer 2026 (Marie Claire).</div>
+              <span class="post-format">Video (Reel) · Hook 1</span>
+            </div>
+            <div class="post-cell helpful">
+              <div class="post-type"><span class="type-dot"></span>Helpful</div>
+              <div class="post-text">"How to make your gel manicure last 3 full weeks" tip carousel</div>
+              <span class="post-format">Carousel</span>
+            </div>
+            <div class="post-cell trust">
+              <div class="post-type"><span class="type-dot"></span>Trust</div>
+              <div class="post-text">THE PEOPLE (monthly anchor): team spotlight, Dalena. Years doing this, what she is known for, over real salon footage</div>
+              <span class="post-format">Video (Reel)</span>
+            </div>
+            <div class="post-cell service">
+              <div class="post-type"><span class="type-dot"></span>Service</div>
+              <div class="post-text">Jelly manicure menu post: the shades we are doing this summer (peach, cherry, milky pink)</div>
+              <span class="post-format">Single Image</span>
+            </div>
+            <div class="post-cell community">
+              <div class="post-type"><span class="type-dot"></span>Community</div>
+              <div class="post-text">QUESTION: "Drop the color you would get this summer 👇 we will design a set around it"</div>
+              <span class="post-format">Single Image + comment bait</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="week-card">
+          <div class="week-header">Week 2 — June 15 to 21 <span class="week-theme">· Wedding guest season</span></div>
+          <div class="week-posts">
+            <div class="post-cell reveal">
+              <div class="post-type"><span class="type-dot"></span>Reveal</div>
+              <div class="post-text">SATISFYING: macro, no talking, a sheer wedding guest set going on coat by coat to the final gloss. Soft elevated French is trending for June weddings (Who What Wear).</div>
+              <span class="post-format">Video (Reel) · Hook 2</span>
+            </div>
+            <div class="post-cell helpful">
+              <div class="post-type"><span class="type-dot"></span>Helpful</div>
+              <div class="post-text">"What nails to get for a summer wedding" guide: guest vs bride, length, shades</div>
+              <span class="post-format">Carousel</span>
+            </div>
+            <div class="post-cell trust">
+              <div class="post-type"><span class="type-dot"></span>Trust</div>
+              <div class="post-text">Real 5 star Google review brought to life as a graphic, in the client's words</div>
+              <span class="post-format">Single Image</span>
+            </div>
+            <div class="post-cell service">
+              <div class="post-type"><span class="type-dot"></span>Service</div>
+              <div class="post-text">Meet the team: Twee spotlight. How long she has been here and what she is known for</div>
+              <span class="post-format">Single Image</span>
+            </div>
+            <div class="post-cell community">
+              <div class="post-type"><span class="type-dot"></span>Community</div>
+              <div class="post-text">Repost a real client's wedding or event nails (ask first), tag her</div>
+              <span class="post-format">Repost</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="week-card">
+          <div class="week-header">Week 3 — June 22 to 28 <span class="week-theme">· Soft blue and smoky lavender</span></div>
+          <div class="week-posts">
+            <div class="post-cell reveal">
+              <div class="post-type"><span class="type-dot"></span>Reveal</div>
+              <div class="post-text">REACTION: client sees her sky blue set for the first time, real delight. "Wait, I love it." Soft blue is having a moment this summer (Good Housekeeping).</div>
+              <span class="post-format">Video (Reel) · Hook 3</span>
+            </div>
+            <div class="post-cell helpful">
+              <div class="post-type"><span class="type-dot"></span>Helpful</div>
+              <div class="post-text">"Which summer shade actually suits your skin tone" carousel</div>
+              <span class="post-format">Carousel</span>
+            </div>
+            <div class="post-cell trust">
+              <div class="post-type"><span class="type-dot"></span>Trust</div>
+              <div class="post-text">Behind the scenes: a quiet morning at the salon, opening up, warm light</div>
+              <span class="post-format">Single Image</span>
+            </div>
+            <div class="post-cell service">
+              <div class="post-type"><span class="type-dot"></span>Service</div>
+              <div class="post-text">Smoky lavender set showcase, the cool girl color of the season (Real Simple)</div>
+              <span class="post-format">Single Image</span>
+            </div>
+            <div class="post-cell community">
+              <div class="post-type"><span class="type-dot"></span>Community</div>
+              <div class="post-text">Story poll: "Blue or lavender for your next set? 👇"</div>
+              <span class="post-format">Story Poll</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="week-card">
+          <div class="week-header">Week 4 — June 29 to July 5 <span class="week-theme">· July 4th and true reds</span></div>
+          <div class="week-posts">
+            <div class="post-cell reveal">
+              <div class="post-type"><span class="type-dot"></span>Reveal</div>
+              <div class="post-text">CURIOSITY: "The one habit quietly wrecking your manicure before week two." Tip reel that ends on a fresh true red set. True reds are trending (Byrdie).</div>
+              <span class="post-format">Video (Reel) · Hook 4</span>
+            </div>
+            <div class="post-cell helpful">
+              <div class="post-type"><span class="type-dot"></span>Helpful</div>
+              <div class="post-text">"5 things that ruin a fresh set in the first week (most people do number 3)" carousel</div>
+              <span class="post-format">Carousel</span>
+            </div>
+            <div class="post-cell trust">
+              <div class="post-type"><span class="type-dot"></span>Trust</div>
+              <div class="post-text">"Clients who have been with us for years" post. Why people keep coming back</div>
+              <span class="post-format">Single Image</span>
+            </div>
+            <div class="post-cell service">
+              <div class="post-type"><span class="type-dot"></span>Service</div>
+              <div class="post-text">July 4th red, white, and blue set ideas. Book before the long weekend</div>
+              <span class="post-format">Single Image</span>
+            </div>
+            <div class="post-cell community">
+              <div class="post-type"><span class="type-dot"></span>Community</div>
+              <div class="post-text">Creator seeding: invite 2 small local creators in for a free set in exchange for a post</div>
+              <span class="post-format">Not a post · DM creators</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PHASE 2 -->
+    <div class="phase-section p2">
+      <div class="phase-banner">
+        <div class="phase-number">2</div>
+        <div class="phase-info">
+          <div class="phase-name">Build Trust</div>
+          <div class="phase-desc">July — become the salon people recognize and remember</div>
+        </div>
+        <span class="phase-badge">4 Weeks</span>
+      </div>
+      <div class="weeks">
+
+        <div class="week-card">
+          <div class="week-header">Week 5 — July 6 to 12 <span class="week-theme">· Vacation and resort nails</span></div>
+          <div class="week-posts">
+            <div class="post-cell reveal">
+              <div class="post-type"><span class="type-dot"></span>Reveal</div>
+              <div class="post-text">QUESTION led: "Going somewhere this summer? 👇 tell us where and we will design your vacation set." Seashell and ocean themes are trending (Style Murals).</div>
+              <span class="post-format">Video (Reel) · Hook 5</span>
+            </div>
+            <div class="post-cell helpful">
+              <div class="post-type"><span class="type-dot"></span>Helpful</div>
+              <div class="post-text">"Pool, beach, and sand proof: the best nail shape for an active summer" (short oval wins)</div>
+              <span class="post-format">Carousel</span>
+            </div>
+            <div class="post-cell trust">
+              <div class="post-type"><span class="type-dot"></span>Trust</div>
+              <div class="post-text">THE PEOPLE (monthly anchor): team spotlight, Twee or Nancy. Her years here and the clients who only book her</div>
+              <span class="post-format">Video (Reel)</span>
+            </div>
+            <div class="post-cell service">
+              <div class="post-type"><span class="type-dot"></span>Service</div>
+              <div class="post-text">Vacation set lookbook: seashell tips, palm accents, soft ombre</div>
+              <span class="post-format">Carousel</span>
+            </div>
+            <div class="post-cell community">
+              <div class="post-type"><span class="type-dot"></span>Community</div>
+              <div class="post-text">Repost a client's vacation nails, tag her, "tag us in your trip pics 🌊"</div>
+              <span class="post-format">Repost</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="week-card">
+          <div class="week-header">Week 6 — July 13 to 19 <span class="week-theme">· Chrome neutrals and butter yellow</span></div>
+          <div class="week-posts">
+            <div class="post-cell reveal">
+              <div class="post-type"><span class="type-dot"></span>Reveal</div>
+              <div class="post-text">TRANSFORMATION: bare nails to a chrome neutral set, the mirror finish catching the light at the end. Chrome neutrals are a top summer trend (The Zoe Report).</div>
+              <span class="post-format">Video (Reel) · Hook 1</span>
+            </div>
+            <div class="post-cell helpful">
+              <div class="post-type"><span class="type-dot"></span>Helpful</div>
+              <div class="post-text">"How to prep before your appointment so you get the perfect set." CTA: "Comment BOOK for our booking link"</div>
+              <span class="post-format">Carousel + auto DM (CreatorFlow)</span>
+            </div>
+            <div class="post-cell trust">
+              <div class="post-type"><span class="type-dot"></span>Trust</div>
+              <div class="post-text">Review graphic: a client who has trusted the same tech for years</div>
+              <span class="post-format">Single Image</span>
+            </div>
+            <div class="post-cell service">
+              <div class="post-type"><span class="type-dot"></span>Service</div>
+              <div class="post-text">Butter yellow set showcase, the soft pastel of the summer</div>
+              <span class="post-format">Single Image</span>
+            </div>
+            <div class="post-cell community">
+              <div class="post-type"><span class="type-dot"></span>Community</div>
+              <div class="post-text">"How often do you really get your nails done? 👇" question post</div>
+              <span class="post-format">Single Image + question caption</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="week-card">
+          <div class="week-header">Week 7 — July 20 to 26 <span class="week-theme">· Fruit motifs and festival nails</span></div>
+          <div class="week-posts">
+            <div class="post-cell reveal">
+              <div class="post-type"><span class="type-dot"></span>Reveal</div>
+              <div class="post-text">SATISFYING: macro of a tiny cherry design being hand painted, start to gloss. Fruit motifs are everywhere this season (Elle).</div>
+              <span class="post-format">Video (Reel) · Hook 2</span>
+            </div>
+            <div class="post-cell helpful">
+              <div class="post-type"><span class="type-dot"></span>Helpful</div>
+              <div class="post-text">"Hand painted vs press on vs stickers: what actually lasts" honest carousel</div>
+              <span class="post-format">Carousel</span>
+            </div>
+            <div class="post-cell trust">
+              <div class="post-type"><span class="type-dot"></span>Trust</div>
+              <div class="post-text">Meet the team: Nancy or Mindy spotlight, what she is known for</div>
+              <span class="post-format">Single Image</span>
+            </div>
+            <div class="post-cell service">
+              <div class="post-type"><span class="type-dot"></span>Service</div>
+              <div class="post-text">Festival and fun summer designs: butterflies, cherries, bold detail work</div>
+              <span class="post-format">Carousel</span>
+            </div>
+            <div class="post-cell community">
+              <div class="post-type"><span class="type-dot"></span>Community</div>
+              <div class="post-text">"Rate this set 1 to 10 👇" on a bold cherry design</div>
+              <span class="post-format">Single Image + comment bait</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="week-card">
+          <div class="week-header">Week 8 — July 27 to Aug 2 <span class="week-theme">· Short, practical summer shapes</span></div>
+          <div class="week-posts">
+            <div class="post-cell reveal">
+              <div class="post-type"><span class="type-dot"></span>Reveal</div>
+              <div class="post-text">REACTION: a client nervous about going shorter, then loving the squoval set. "I am never going long again." Short oval and squoval are rising for everyday wear (Joyee Nails).</div>
+              <span class="post-format">Video (Reel) · Hook 3</span>
+            </div>
+            <div class="post-cell helpful">
+              <div class="post-type"><span class="type-dot"></span>Helpful</div>
+              <div class="post-text">"Short nails that still look done: 6 sets to screenshot" carousel</div>
+              <span class="post-format">Carousel</span>
+            </div>
+            <div class="post-cell trust">
+              <div class="post-type"><span class="type-dot"></span>Trust</div>
+              <div class="post-text">"Why people drive past 5 other salons to come here" post, real reasons from reviews</div>
+              <span class="post-format">Single Image</span>
+            </div>
+            <div class="post-cell service">
+              <div class="post-type"><span class="type-dot"></span>Service</div>
+              <div class="post-text">Full service menu refresh: what we do, honest pricing, no surprises</div>
+              <span class="post-format">Carousel</span>
+            </div>
+            <div class="post-cell community">
+              <div class="post-type"><span class="type-dot"></span>Community</div>
+              <div class="post-text">Repost any real client who tagged us this month</div>
+              <span class="post-format">Repost</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PHASE 3 -->
+    <div class="phase-section p3">
+      <div class="phase-banner">
+        <div class="phase-number">3</div>
+        <div class="phase-info">
+          <div class="phase-name">Book the Summer</div>
+          <div class="phase-desc">August — capture the people ready to book right now</div>
+        </div>
+        <span class="phase-badge">2 Weeks</span>
+      </div>
+      <div class="weeks">
+
+        <div class="week-card">
+          <div class="week-header">Week 9 — Aug 3 to 9 <span class="week-theme">· Back to school and graduation</span></div>
+          <div class="week-posts">
+            <div class="post-cell reveal">
+              <div class="post-type"><span class="type-dot"></span>Reveal</div>
+              <div class="post-text">CURIOSITY: "The set every mom is booking before school starts." Clean, low maintenance neutrals for the new term (Ersa Nails).</div>
+              <span class="post-format">Video (Reel) · Hook 4</span>
+            </div>
+            <div class="post-cell booking">
+              <div class="post-type"><span class="type-dot"></span>Booking</div>
+              <div class="post-text">"Back to school weeks are our busiest. Book your spot now 👉 nailditspa.com" with open slots</div>
+              <span class="post-format">Single Image + Paid Boost</span>
+            </div>
+            <div class="post-cell trust">
+              <div class="post-type"><span class="type-dot"></span>Trust</div>
+              <div class="post-text">Best review of the whole summer, front and center</div>
+              <span class="post-format">Single Image</span>
+            </div>
+            <div class="post-cell service">
+              <div class="post-type"><span class="type-dot"></span>Service</div>
+              <div class="post-text">Graduation and end of summer set ideas: gold leaf, soft French, fresh neutrals</div>
+              <span class="post-format">Carousel</span>
+            </div>
+            <div class="post-cell community">
+              <div class="post-type"><span class="type-dot"></span>Community</div>
+              <div class="post-text">"Comment the look you want and we will hold a spot for you 👇"</div>
+              <span class="post-format">Single Image + auto DM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="week-card">
+          <div class="week-header">Week 10 — Aug 10 to 16 <span class="week-theme">· Last call on summer</span></div>
+          <div class="week-posts">
+            <div class="post-cell reveal">
+              <div class="post-type"><span class="type-dot"></span>Reveal</div>
+              <div class="post-text">TRANSFORMATION: "One last summer set before fall." A bright reveal that closes the season strong.</div>
+              <span class="post-format">Video (Reel) + Paid Boost · Hook 1</span>
+            </div>
+            <div class="post-cell booking">
+              <div class="post-type"><span class="type-dot"></span>Booking</div>
+              <div class="post-text">"Last call for summer sets. Walk in anytime or book online, we are open 7 days"</div>
+              <span class="post-format">Video (Reel) + Paid Boost</span>
+            </div>
+            <div class="post-cell trust">
+              <div class="post-type"><span class="type-dot"></span>Trust</div>
+              <div class="post-text">A summer recap: real client sets from the last 10 weeks, set to music</div>
+              <span class="post-format">Video (Reel)</span>
+            </div>
+            <div class="post-cell service">
+              <div class="post-type"><span class="type-dot"></span>Service</div>
+              <div class="post-text">First look at fall: the colors and sets coming in September</div>
+              <span class="post-format">Single Image</span>
+            </div>
+            <div class="post-cell community">
+              <div class="post-type"><span class="type-dot"></span>Community</div>
+              <div class="post-text">"Show us your favorite set we did this summer and tag us 💅"</div>
+              <span class="post-format">Single Image + question caption</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- STATUS -->
+    <div class="status-section">
+      <div class="status-card">
+        <div class="status-title">
+          <div class="status-icon icon-green">
+            <svg viewBox="0 0 16 16" fill="none" width="16" height="16"><path d="M3 8.5L6.5 12L13 5" stroke="#7C8A6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          Already in place
+        </div>
+        <ul class="check-list">
+          <li class="check-item"><div class="check-box done"><svg class="svg-check" viewBox="0 0 10 10" fill="none"><path d="M2 5.5L4 7.5L8 3" stroke="#7C8A6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Live website at nailditspa.com</li>
+          <li class="check-item"><div class="check-box done"><svg class="svg-check" viewBox="0 0 10 10" fill="none"><path d="M2 5.5L4 7.5L8 3" stroke="#7C8A6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Instagram page live at @naildit.spa</li>
+          <li class="check-item"><div class="check-box done"><svg class="svg-check" viewBox="0 0 10 10" fill="none"><path d="M2 5.5L4 7.5L8 3" stroke="#7C8A6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Google review automation running</li>
+          <li class="check-item"><div class="check-box done"><svg class="svg-check" viewBox="0 0 10 10" fill="none"><path d="M2 5.5L4 7.5L8 3" stroke="#7C8A6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Comment to DM live (CreatorFlow, keyword BOOK)</li>
+          <li class="check-item"><div class="check-box done"><svg class="svg-check" viewBox="0 0 10 10" fill="none"><path d="M2 5.5L4 7.5L8 3" stroke="#7C8A6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Booking link at nailditspa.com</li>
+          <li class="check-item"><div class="check-box done"><svg class="svg-check" viewBox="0 0 10 10" fill="none"><path d="M2 5.5L4 7.5L8 3" stroke="#7C8A6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Team to feature: Dalena, Twee, Nancy, Mindy</li>
+          <li class="check-item"><div class="check-box done"><svg class="svg-check" viewBox="0 0 10 10" fill="none"><path d="M2 5.5L4 7.5L8 3" stroke="#7C8A6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Vietnamese owned angle (the search lane no one has claimed)</li>
+        </ul>
+      </div>
+
+      <div class="status-card">
+        <div class="status-title">
+          <div class="status-icon icon-orange">
+            <svg viewBox="0 0 16 16" fill="none" width="16" height="16"><path d="M8 3V8.5M8 11.5V12" stroke="#C9A24A" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          What Dalena needs to capture
+        </div>
+        <ul class="check-list">
+          <li class="check-item"><div class="check-box todo"></div><strong style="color:#9a7615">Film before and after reveals during real appointments (the #1 format)</strong></li>
+          <li class="check-item"><div class="check-box todo"></div>Macro close ups of application and the gloss coat (the satisfying lane)</li>
+          <li class="check-item"><div class="check-box todo"></div>Client reaction clips (with their okay)</li>
+          <li class="check-item"><div class="check-box todo"></div>Short team spotlight clips for each tech, over real salon footage</li>
+          <li class="check-item"><div class="check-box todo"></div>Short team intro clips for each tech</li>
+          <li class="check-item"><div class="check-box todo"></div>A handful of clean salon and behind the scenes shots</li>
+          <li class="check-item"><div class="check-box todo"></div>Permission to repost from a few happy clients</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Built for <strong style="color:var(--terra)">Nail'd It! Spa</strong> by Zentara &nbsp;·&nbsp; <a href="https://nailditspa.com" target="_blank">nailditspa.com</a> &nbsp;·&nbsp; Stanton, CA &nbsp;·&nbsp; June 2026
+  </div>
+
+</body>
+</html>
